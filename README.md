@@ -32,7 +32,7 @@ npm install
 
 ```zsh
 npx expo start -c
-# then press `i` to open the iOS simulator, or a to ron Android Simulator
+# then press `i` to open the iOS simulator, or 'a' to run Android Simulator
 ```
 
 Notes:
