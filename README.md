@@ -4,11 +4,10 @@ A small React Native + Expo example that mimics a grid layout (with a toggle to 
 
 ## Contents
 - `App.tsx` — app bootstrap
-- `src/screens/HomeScreen.tsx` — home screen with grid/list toggle
-- `src/components/GridItem.tsx` — individual card component (uses `Card`)
-- `src/components/Card.tsx` — small reusable card wrapper
+- `src/screens/HomeScreen.tsx` — home screen with grid/list toggle and uses flex 
+- `src/components/GridItem.tsx` — individual grid item
 - `assets/icons/` — PNG icon assets used by the grid
-- `metro.config.js`, `babel.config.js` — bundler/runtime configuration
+- `metro.config.js`, `babel.config.js` — bundler/runtime configuration (I tried to use sgv files so I needed them when getting the packages needed)
 
 ## Prerequisites
 - Node.js (LTS recommended)
