@@ -23,7 +23,7 @@ Use `npx` so you don't need a global Expo CLI installation.
 1. Clone the repo and install dependencies:
 
 ```zsh
-git clone https://github.com/batiacosta/MimicGridLayout
+git clone https://github.com/batiacosta/MimicGridLayout.git
 cd MimicGridLayout
 npm install
 ```
