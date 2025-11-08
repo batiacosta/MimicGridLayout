@@ -1,8 +1,9 @@
-import Calls from '../../assets/icons/calls.svg';
-import Camera from '../../assets/icons/camera.svg';
-import Messages from '../../assets/icons/messages.svg';
-import Music from '../../assets/icons/music.svg';
-import Photos from '../../assets/icons/photos.svg';
+// Use require() so Metro resolves the static image assets reliably.
+const Calls = require('../../assets/icons/calls.png');
+const Camera = require('../../assets/icons/camera.png');
+const Messages = require('../../assets/icons/messages.png');
+const Music = require('../../assets/icons/music.png');
+const Photos = require('../../assets/icons/photos.png');
 
 export default {
   calls: Calls,

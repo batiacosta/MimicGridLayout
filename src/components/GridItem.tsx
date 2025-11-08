@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import * as Icons from '../icons';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import Icons from '../icons';
 
 export default function GridItem({ title, iconKey }: { title: string; iconKey?: string }) {
   const Icon = iconKey ? (Icons as any)[iconKey] : null;
@@ -8,7 +8,19 @@ export default function GridItem({ title, iconKey }: { title: string; iconKey?: 
   return (
     <View style={styles.card}>
       <View style={styles.iconBox}>
-        {Icon ? <Icon width={40} height={40} fill="#4F46E5" /> : <Text style={styles.emoji}>📦</Text>}
+        {
+          Icon ? (
+            // If Icon is a React component (SVG converted to component) render it,
+            // otherwise assume it's an image asset and render with <Image />.
+            typeof Icon === 'function' ? (
+              <Icon width={40} height={40} fill="#4F46E5" />
+            ) : (
+              <Image source={Icon as any} style={{ width: 40, height: 40, tintColor: '#4F46E5' }} resizeMode="contain" />
+            )
+          ) : (
+            <Text style={styles.emoji}>📦</Text>
+          )
+        }
       </View>
       <Text style={styles.title}>{title}</Text>
     </View>
