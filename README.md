@@ -1,6 +1,6 @@
 # MimicGridLayout
 
-A small React Native + Expo example that mimics a grid layout (with a toggle to switch between grid and list). It demonstrates importing image assets, a tiny reusable Card component, and a simple FlatList-based layout.
+A small React Native + Expo App that mimics a grid layout (with a toggle to switch between grid and list). It demonstrates importing image assets, a tiny reusable Card component, and a simple FlatList-based layout.
 
 ## Contents
 - `App.tsx` — app bootstrap
@@ -23,7 +23,7 @@ Use `npx` so you don't need a global Expo CLI installation.
 1. Clone the repo and install dependencies:
 
 ```zsh
-git clone <repo-url>
+git clone https://github.com/batiacosta/MimicGridLayout
 cd MimicGridLayout
 npm install
 ```
